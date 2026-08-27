@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak XI RPL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111827;
+            color: white;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #1f2937;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h2 {
+            color: #38bdf8;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .navbar a:hover {
+            color: #38bdf8;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 70px 20px 40px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 span {
+            color: #38bdf8;
+        }
+
+        .header p {
+            color: #9ca3af;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* CARD */
+        .members {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            background: #1f2937;
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid #374151;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        /* ICON / INISIAL */
+        .profile {
+            width: 75px;
+            height: 75px;
+            background: #38bdf8;
+            color: #111827;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin-bottom: 8px;
+        }
+
+        .job {
+            color: #38bdf8;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #9ca3af;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0f172a;
+            color: #9ca3af;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .navbar a {
+                margin: 0 8px;
+            }
+
+            .members {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h2>XI RPL</h2>
+        <div>
+            <a href="profil.html">Profil</a>
+            <a href="anggota.html">Anggota</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Hubungi <span>Kami</span></h1>
+        <p>Informasi kontak resmi dan alamat sekolah kelas XI RPL</p>
+    </div>
+
+    <!-- DAFTAR KONTAK -->
+    <div class="container">
+        <div class="members">
+
+            <!-- EMAIL KELAS -->
+            <div class="card">
+                <div class="profile">✉</div>
+                <h2>Email Kelas</h2>
+                <div class="job">EMAIL RESMI</div>
+                <p>xi.rpl@example.com</p>
+            </div>
+
+            <!-- INSTAGRAM KELAS -->
+            <div class="card">
+                <div class="profile">📷</div>
+                <h2>Instagram</h2>
+                <div class="job">MEDIA SOSIAL</div>
+                <p>@xi_rpl</p>
+            </div>
+
+            <!-- ALAMAT SEKOLAH -->
+            <div class="card">
+                <div class="profile">📍</div>
+                <h2>Alamat Sekolah</h2>
+                <div class="job">LOKASI SMKN 1 GARUT</div>
+                <p>Jl. Cimanuk No. 309, Tarogong Kidul, Kabupaten Garut, Jawa Barat</p>
+            </div>
+
+            <!-- EMAIL ANGGOTA TIM -->
+            <div class="card">
+                <div class="profile">👥</div>
+                <h2>Email Anggota Tim</h2>
+                <div class="job">DEVELOPER TEAM</div>
+                <p>
+                    <strong>PM:</strong> syakira@gmail.com<br>
+                    <strong>Profil:</strong> alifah@gmail.com<br>
+                    <strong>Anggota:</strong> ahmad@gmail.com<br>
+                    <strong>Kontak:</strong> nadiela@gmail.com
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 XI RPL | Website Profil Sekolah
+    </footer>
+
+</body>
+</html>
