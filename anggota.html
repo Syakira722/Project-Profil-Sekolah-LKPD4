@@ -1,41 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Anggota Tim XI RPL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anggota XI RPL</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111827;
+            color: white;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #1f2937;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h2 {
+            color: #38bdf8;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .navbar a:hover {
+            color: #38bdf8;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 70px 20px 40px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 span {
+            color: #38bdf8;
+        }
+
+        .header p {
+            color: #9ca3af;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* CARD */
+        .members {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            background: #1f2937;
+            border-radius: 15px;
+            padding: 30px;
+
+            border: 1px solid #374151;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        /* FOTO / INISIAL */
+        .profile {
+            width: 75px;
+            height: 75px;
+
+            background: #38bdf8;
+            color: #111827;
+
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 24px;
+            font-weight: bold;
+
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin-bottom: 8px;
+        }
+
+        .job {
+            color: #38bdf8;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #9ca3af;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0f172a;
+            color: #9ca3af;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .navbar a {
+                margin: 0 8px;
+            }
+
+            .members {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Anggota Tim XI RPL</h1>
+    <!-- NAVBAR -->
+    <div class="navbar">
 
-    <ul>
-        <li>
-            <strong>Syakira</strong> - Project Manager
-            <br>
-           • Membuat repository
+        <h2>XI RPL</h2>
+
+        <div>
+            <a href="profil.html">Profil</a>
+            <a href="anggota.html">Anggota</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+
+    </div>
+
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <h1>Anggota <span>Tim</span></h1>
+
+        <p>
+            Mengenal anggota dan pembagian peran dalam proyek XI RPL
+        </p>
+
+    </div>
+
+
+    <!-- DAFTAR ANGGOTA -->
+    <div class="container">
+
+        <div class="members">
+
+            <!-- PROJECT MANAGER -->
+            <div class="card">
+
+                <div class="profile">
+                    PM
+                </div>
+
+                <h2>Syakira</h2>
+
+                <div class="job">
+                    PROJECT MANAGER
+                </div>
+
+                <p>
+                    • Membuat repository
            • Menentukan pembagian tugas
            • Memeriksa pull request
            • Melakukan code review
-           • Melakukan merge 
-        </li>
+           • Melakukan merge
+                </p>
 
-        <li>
-            <strong>Aliffah</strong> - Developer Profil
-            <br>
-            Bertanggung jawab membuat halaman profil kelas.
-        </li>
+            </div>
 
-        <li>
-            <strong>Ahmad</strong> - Developer Anggota
-            <br>
-            Bertanggung jawab membuat halaman daftar anggota.
-        </li>
 
-        <li>
-            <strong>Nadiela</strong> - Developer Kontak
-            <br>
-            Bertanggung jawab membuat halaman kontak.
-        </li>
-    </ul>
+            <!-- DEVELOPER PROFIL -->
+            <div class="card">
+
+                <div class="profile">
+                    DP
+                </div>
+
+                <h2>Allifah</h2>
+
+                <div class="job">
+                    DEVELOPER PROFIL
+                </div>
+
+                <p>
+                    Bertanggung jawab dalam mengembangkan halaman
+                    profil kelas XI RPL.
+                </p>
+
+            </div>
+
+
+            <!-- DEVELOPER ANGGOTA -->
+            <div class="card">
+
+                <div class="profile">
+                    DA
+                </div>
+
+                <h2>Ahmad</h2>
+
+                <div class="job">
+                    DEVELOPER ANGGOTA
+                </div>
+
+                <p>
+                    Bertanggung jawab dalam mengembangkan halaman
+                    anggota dan menampilkan informasi anggota tim.
+                </p>
+
+            </div>
+
+
+            <!-- DEVELOPER KONTAK -->
+            <div class="card">
+
+                <div class="profile">
+                    DK
+                </div>
+
+                <h2>Nadiela</h2>
+
+                <div class="job">
+                    DEVELOPER KONTAK
+                </div>
+
+                <p>
+                    Bertanggung jawab dalam mengembangkan halaman
+                    kontak untuk website XI RPL.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        © 2026 XI RPL | Website Profil Kelas
+
+    </footer>
 
 </body>
 </html>
